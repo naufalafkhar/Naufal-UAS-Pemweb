@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Start of Header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.8rem 8rem;
+  justify-content: space-between;
+}
+
+header .logo_container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  cursor: pointer;
+}
+
+.logo_container span {
+  font-weight: 600;
+}
+
+.logo_container__logo {
+  width: 2rem;
+  height: 2rem;
+  background-color: black;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_container__logo span {
+  font-weight: 600;
+  color: white;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0rem;
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+header nav ul .contact {
+  background-color: black;
+  color: white;
+}
+
+/* Start of Main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 5.2rem;
+  padding: 1.8rem 8rem;
+}
+
+.home .welcome-text {
+  font-weight: 800;
+  font-size: 55px;
+  text-align: center;
+  width: 100%;
+}
+
+.home .promotional-text {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: grey;
+  width: 100%;
+}
+
+.home .button-action {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+button {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+button.primary {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+button.outline {
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  padding: 10px 20px;
+  border-width: 1px !important;
+  cursor: pointer;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 2.5rem;
+  padding: 1.8rem 8rem;
+  background-color: black;
+  color: white;
+}
+
+.about .about-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  row-gap: 1.7rem;
+}
+
+.about .about-desc .about-us {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.about .about-desc .about-us-description {
+  font-weight: 300;
+  font-size: 15px;
+  color: grey;
+}
+
+.about .about-grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  column-gap: 20px;
+}
+
+.about .about-grid .about-grid__item {
+  flex: 1 1 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-grid__item-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+  text-align: center;
+}
+
+.totals {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.desc-totals {
+  font-weight: 400;
+  font-size: 1rem;
+  color: grey;
+}
+
+.desc-totals > ul {
+  row-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-grid-visi-misi {
+  flex-direction: column;
+  display: flex;
+}
+.about-grid-visi-misi__item {
+  display: flex;
+  /* flex-direction: column; */
+  row-gap: 20px;
+}
+
+.about-grid-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  row-gap: 1rem;
+}
+
+.about-grid-child > .totals {
+  text-align: center;
+  width: 100%;
+}
+
+.jasa {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 2.5rem;
+  padding: 1.8rem 8rem;
+  margin-top: 2rem;
+}
+
+.jasa-content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  column-gap: 5rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
+  margin-top: 3rem;
+}
+
+.jasa-content::-webkit-scrollbar {
+  display: none;
+}
+
+.card-jasa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 20rem;
+  max-width: 20rem;
+}
+
+.card-jasa__icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: black;
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-jasa__icon .icons {
+  color: white;
+}
+
+.card-jasa__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.card-jasa__content .title {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.card-jasa__content .description {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 2.5rem;
+  padding: 1.8rem 8rem;
+  margin-top: 2rem;
+  background-color: black;
+}
+
+.team .title {
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
+}
+
+.team-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-content__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+}
+
+.team-content__card-title {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+}
+
+.team-content__card-title img {
+  border-radius: 3rem;
+}
+
+.team-content__card-desc {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+
+.team-content__card-desc-title {
+  font-weight: 700;
+}
+
+.team-content__card-desc-role {
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.button-primary {
+  background-color: black;
+  cursor: pointer;
+  color: white;
+  padding: 10px 2rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.karir {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 2.5rem;
+  padding: 1.8rem 8rem;
+  margin-top: 2rem;
+}
+
+.karir-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.karir-content__card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 1rem;
+  width: 18rem;
+  height: 12rem;
+  border-width: 1px;
+  border-style: solid;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.karir-content__card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 1rem;
+  width: 100%;
+}
+
+.form-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 0.5rem;
+  width: 100%;
+}
+
+.form-data label {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+input {
+  height: 32px;
+  width: 100%;
+  outline: none;
+  padding: 8px 20px;
+}
+
+.kontak-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.kontak-content__column {
+}
+
+.kontak-content__column-company {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.kontak-content__column-company__title {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.kontak-content__column-company__alamat {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.kontak-content__column-company__socmed {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.kontak-content__column-company__socmed .socmed {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 20px;
+  border-radius: 2rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
